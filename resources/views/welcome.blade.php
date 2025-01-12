@@ -6,33 +6,41 @@
     <title>Vendedor Plus - Gestão Inteligente</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         /* Fontes e cores do layout */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9fcff;
-            color: #333;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f8fc;
+            color: #2c3e50;
         }
         nav {
-            background-color: #f1f8ff;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav a {
-            color: #0056b3;
-            font-weight: bold;
+            color: #1a73e8;
+            font-weight: 500;
+        }
+        nav a.btn {
+            color: #fff;
+            background-color: #1a73e8;
+            border-radius: 25px;
         }
         .hero {
-            background-color: #e8f5ff;
-            padding: 5rem 1rem;
+            background-color: #eaf4ff;
+            padding: 4rem 1rem;
             text-align: center;
         }
         .hero h1 {
             font-size: 3rem;
-            color: #0056b3;
-            font-weight: bold;
+            color: #1a73e8;
+            font-weight: 700;
         }
         .hero p {
             font-size: 1.25rem;
             margin-top: 1rem;
+            color: #34495e;
         }
         .hero .btn {
             background-color: #00c853;
@@ -40,23 +48,28 @@
             font-size: 1rem;
             padding: 0.8rem 1.5rem;
             margin-top: 1.5rem;
-            border-radius: 5px;
-            text-transform: uppercase;
+            border-radius: 25px;
         }
         .features {
             padding: 4rem 1rem;
+            text-align: center;
         }
         .features .feature-item {
-            text-align: center;
             padding: 1rem;
         }
         .features .feature-icon {
             font-size: 3rem;
-            color: #0056b3;
+            color: #1a73e8;
             margin-bottom: 1rem;
         }
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
         .cta {
-            background-color: #0056b3;
+            background-color: #1a73e8;
             color: #fff;
             padding: 3rem 1rem;
             text-align: center;
@@ -69,17 +82,21 @@
             background-color: #00c853;
             color: #fff;
             padding: 0.8rem 2rem;
-            border-radius: 5px;
+            border-radius: 25px;
             text-decoration: none;
         }
         footer {
-            background-color: #f1f8ff;
+            background-color: #f8fafc;
             padding: 2rem 1rem;
             text-align: center;
         }
         footer a {
-            color: #0056b3;
+            color: #1a73e8;
             text-decoration: none;
+        }
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
         }
     </style>
 </head>
@@ -106,7 +123,7 @@
                     <a class="nav-link" href="#">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-outline-primary nav-link" href="#">Login</a>
+                    <a class="btn btn-primary nav-link px-4" href="#">Login</a>
                 </li>
             </ul>
         </div>
@@ -116,11 +133,32 @@
 <!-- Hero Section -->
 <section class="hero">
     <div class="container">
-        <h1>Controle e Cresça com o Vendedor Plus</h1>
+        <h1>🚀 Controle e Cresça com o Vendedor Plus</h1>
         <p>O sistema que torna a gestão do seu negócio mais eficiente e inovadora.</p>
         <a href="#" class="btn">Teste Grátis</a>
     </div>
 </section>
+
+<!-- Carousel -->
+<div id="featuresCarousel" class="carousel slide mt-5 container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://via.placeholder.com/1200x400" alt="Feature 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/1200x400" alt="Feature 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/1200x400" alt="Feature 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
 
 <!-- Features Section -->
 <section class="features">
@@ -128,17 +166,17 @@
         <div class="row">
             <div class="col-md-4 feature-item">
                 <i class="fa fa-chart-line feature-icon"></i>
-                <h3>Gestão Inteligente</h3>
+                <h3>📊 Gestão Inteligente</h3>
                 <p>Visualize suas vendas e controle seus resultados.</p>
             </div>
             <div class="col-md-4 feature-item">
                 <i class="fa fa-lightbulb feature-icon"></i>
-                <h3>Automatização</h3>
+                <h3>🤖 Automatização</h3>
                 <p>Reduza seu tempo com ferramentas automatizadas.</p>
             </div>
             <div class="col-md-4 feature-item">
                 <i class="fa fa-user-friends feature-icon"></i>
-                <h3>Fácil de Usar</h3>
+                <h3>✨ Fácil de Usar</h3>
                 <p>Um sistema pensado para todos os tipos de usuários.</p>
             </div>
         </div>
@@ -147,7 +185,7 @@
 
 <!-- Call to Action -->
 <section class="cta">
-    <h2>Pronto para transformar sua gestão?</h2>
+    <h2>📈 Pronto para transformar sua gestão?</h2>
     <a href="#" class="btn">Experimente Agora</a>
 </section>
 
